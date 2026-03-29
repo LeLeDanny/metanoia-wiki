@@ -70,17 +70,16 @@
 		})();
 	</script> </sl-sidebar-state-persist> <div class="md:sl-hidden"> <div class="mobile-preferences sl-flex astro-wu23bvmt"> <div class="social-icons astro-wu23bvmt"> <a href="https://github.com/LeLeDanny/metanoia-wiki" rel="me" class="sl-flex astro-wy4te6ga"><span class="sr-only astro-wy4te6ga">GitHub</span><svg aria-hidden="true" class="astro-wy4te6ga astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57L9 21.07c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.08-.74.09-.73.09-.73 1.2.09 1.83 1.24 1.83 1.24 1.08 1.83 2.81 1.3 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3Z"/></svg></a> </div> <starlight-theme-select>  <label style="--sl-select-width: 6.25em" class="astro-4yphtoen"> <span class="sr-only astro-4yphtoen">Select theme</span> <svg aria-hidden="true" class="icon label-icon astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M21 14h-1V7a3 3 0 0 0-3-3H7a3 3 0 0 0-3 3v7H3a1 1 0 0 0-1 1v2a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3v-2a1 1 0 0 0-1-1ZM6 7a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v7H6V7Zm14 10a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-1h16v1Z"/></svg> <select autocomplete="off" class="astro-4yphtoen"> <option value="dark" class="astro-4yphtoen">Dark</option><option value="light" class="astro-4yphtoen">Light</option><option value="auto" selected class="astro-4yphtoen">Auto</option> </select> <svg aria-hidden="true" class="icon caret astro-4yphtoen astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1em;"><path d="M17 9.17a1 1 0 0 0-1.41 0L12 12.71 8.46 9.17a1 1 0 1 0-1.41 1.42l4.24 4.24a1.002 1.002 0 0 0 1.42 0L17 10.59a1.002 1.002 0 0 0 0-1.42Z"/></svg> </label> </starlight-theme-select>  <script>
 	StarlightThemeProvider.updatePickers();
-</script>   </div> </div> </div> </div> </nav> <div class="main-frame astro-vrdttmbt">  <script type="module">const a=document.getElementById("starlight__sidebar"),n=a?.querySelector("sl-sidebar-state-persist"),o="sl-sidebar-state",i=()=>{let t=[];const e=n?.dataset.hash||"";try{const s=sessionStorage.getItem(o),r=JSON.parse(s||"{}");Array.isArray(r.open)&&r.hash===e&&(t=r.open)}catch{}return{hash:e,open:t,scroll:a?.scrollTop||0}},c=t=>{try{sessionStorage.setItem(o,JSON.stringify(t))}catch{}},d=()=>c(i()),l=(t,e)=>{const s=i();s.open[e]=t,c(s)};n?.addEventListener("click",t=>{if(!(t.target instanceof Element))return;const e=t.target.closest("summary")?.closest("details");if(!e)return;const s=e.querySelector("sl-sidebar-restore"),r=parseInt(s?.dataset.index||"");isNaN(r)||l(!e.open,r)});addEventListener("visibilitychange",()=>{document.visibilityState==="hidden"&&d()});addEventListener("pageHide",d);</script> <div class="lg:sl-flex astro-67yu43on"> <aside class="right-sidebar-container print:hidden astro-67yu43on"> <div class="right-sidebar astro-67yu43on"> <script type="module" src="/metanoia-wiki/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.hwBsy0Mo.js"></script><script type="module" src="/metanoia-wiki/_astro/TableOfContents.astro_astro_type_script_index_0_lang.FuRcXuRY.js"></script><div class="lg:sl-hidden astro-pb3aqygn"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-doynk5tl"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-doynk5tl"><details id="starlight__mobile-toc" class="astro-doynk5tl"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-doynk5tl"><span class="toggle sl-flex astro-doynk5tl">On this page<svg aria-hidden="true" class="caret astro-doynk5tl astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current astro-doynk5tl"></span></summary><div class="dropdown astro-doynk5tl"><ul class="isMobile astro-gnoq344e" style="--depth: 0;"> <li class="astro-gnoq344e" style="--depth: 0;"> <a href="#_top" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#construction-step-by-step" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Construction: Step by Step</span> </a> <ul class="isMobile astro-gnoq344e" style="--depth: 1;"> <li class="astro-gnoq344e" style="--depth: 1;"> <a href="#1-choose-a-polarity" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">1. Choose a Polarity</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#2-write-the-description" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">2. Write the Description</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#3-set-the-awareness-state" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">3. Set the Awareness State</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#4-list-intents" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">4. List Intents</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#5-set-duration-type" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">5. Set Duration Type</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#6-set-duration-frame" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">6. Set Duration Frame</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#7-set-area" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">7. Set Area</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#8-set-area-radius" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">8. Set Area Radius</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#9-set-type" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">9. Set Type</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#10-calculate-ability-realm-ar" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">10. Calculate Ability Realm (AR)</span> </a>  </li> </ul> </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#cast-cost" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Cast Cost</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#power-scaling" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Power Scaling</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#example" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Example</span> </a>  </li> </ul></div></details></nav></mobile-starlight-toc></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-pb3aqygn"><div class="sl-container astro-pb3aqygn"><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-gnoq344e" style="--depth: 0;"> <li class="astro-gnoq344e" style="--depth: 0;"> <a href="#_top" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#construction-step-by-step" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Construction: Step by Step</span> </a> <ul class="astro-gnoq344e" style="--depth: 1;"> <li class="astro-gnoq344e" style="--depth: 1;"> <a href="#1-choose-a-polarity" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">1. Choose a Polarity</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#2-write-the-description" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">2. Write the Description</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#3-set-the-awareness-state" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">3. Set the Awareness State</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#4-list-intents" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">4. List Intents</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#5-set-duration-type" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">5. Set Duration Type</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#6-set-duration-frame" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">6. Set Duration Frame</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#7-set-area" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">7. Set Area</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#8-set-area-radius" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">8. Set Area Radius</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#9-set-type" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">9. Set Type</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#10-calculate-ability-realm-ar" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">10. Calculate Ability Realm (AR)</span> </a>  </li> </ul> </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#cast-cost" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Cast Cost</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#power-scaling" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Power Scaling</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#example" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Example</span> </a>  </li> </ul></nav></starlight-toc></div></div> </div> </aside> <div class="main-pane astro-67yu43on">  <main data-pagefind-body class="astro-bguv2lll" lang="en" dir="ltr">    <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <h1 id="_top" class="astro-j6tvhyss">Active Abilities</h1> </div> </div> <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <div class="sl-markdown-content"> <p>Active abilities are the primary expression of a character’s Ren. They are built freely from a polarity and a description of intent, then assigned mechanical properties that determine their complexity, cost, and scope.</p>
+</script>   </div> </div> </div> </div> </nav> <div class="main-frame astro-vrdttmbt">  <script type="module">const a=document.getElementById("starlight__sidebar"),n=a?.querySelector("sl-sidebar-state-persist"),o="sl-sidebar-state",i=()=>{let t=[];const e=n?.dataset.hash||"";try{const s=sessionStorage.getItem(o),r=JSON.parse(s||"{}");Array.isArray(r.open)&&r.hash===e&&(t=r.open)}catch{}return{hash:e,open:t,scroll:a?.scrollTop||0}},c=t=>{try{sessionStorage.setItem(o,JSON.stringify(t))}catch{}},d=()=>c(i()),l=(t,e)=>{const s=i();s.open[e]=t,c(s)};n?.addEventListener("click",t=>{if(!(t.target instanceof Element))return;const e=t.target.closest("summary")?.closest("details");if(!e)return;const s=e.querySelector("sl-sidebar-restore"),r=parseInt(s?.dataset.index||"");isNaN(r)||l(!e.open,r)});addEventListener("visibilitychange",()=>{document.visibilityState==="hidden"&&d()});addEventListener("pageHide",d);</script> <div class="lg:sl-flex astro-67yu43on"> <aside class="right-sidebar-container print:hidden astro-67yu43on"> <div class="right-sidebar astro-67yu43on"> <script type="module" src="/metanoia-wiki/_astro/MobileTableOfContents.astro_astro_type_script_index_0_lang.hwBsy0Mo.js"></script><script type="module" src="/metanoia-wiki/_astro/TableOfContents.astro_astro_type_script_index_0_lang.FuRcXuRY.js"></script><div class="lg:sl-hidden astro-pb3aqygn"><mobile-starlight-toc data-min-h="2" data-max-h="3" class="astro-doynk5tl"><nav aria-labelledby="starlight__on-this-page--mobile" class="astro-doynk5tl"><details id="starlight__mobile-toc" class="astro-doynk5tl"><summary id="starlight__on-this-page--mobile" class="sl-flex astro-doynk5tl"><span class="toggle sl-flex astro-doynk5tl">On this page<svg aria-hidden="true" class="caret astro-doynk5tl astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1rem;"><path d="m14.83 11.29-4.24-4.24a1 1 0 1 0-1.42 1.41L12.71 12l-3.54 3.54a1 1 0 0 0 0 1.41 1 1 0 0 0 .71.29 1 1 0 0 0 .71-.29l4.24-4.24a1.002 1.002 0 0 0 0-1.42Z"/></svg></span><span class="display-current astro-doynk5tl"></span></summary><div class="dropdown astro-doynk5tl"><ul class="isMobile astro-gnoq344e" style="--depth: 0;"> <li class="astro-gnoq344e" style="--depth: 0;"> <a href="#_top" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#construction" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Construction</span> </a> <ul class="isMobile astro-gnoq344e" style="--depth: 1;"> <li class="astro-gnoq344e" style="--depth: 1;"> <a href="#1-choose-a-polarity" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">1. Choose a Polarity</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#2-choose-your-intents" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">2. Choose Your Intents</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#3-set-the-awareness-substate" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">3. Set the Awareness Substate</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#4-set-duration" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">4. Set Duration</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#5-calculate-strain-cost" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">5. Calculate Strain Cost</span> </a>  </li> </ul> </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#power-scaling" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Power Scaling</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#creation-abilities" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Creation Abilities</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#examples" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Examples</span> </a>  </li> </ul></div></details></nav></mobile-starlight-toc></div><div class="right-sidebar-panel sl-hidden lg:sl-block astro-pb3aqygn"><div class="sl-container astro-pb3aqygn"><starlight-toc data-min-h="2" data-max-h="3"><nav aria-labelledby="starlight__on-this-page"><h2 id="starlight__on-this-page">On this page</h2><ul class="astro-gnoq344e" style="--depth: 0;"> <li class="astro-gnoq344e" style="--depth: 0;"> <a href="#_top" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Overview</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#construction" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Construction</span> </a> <ul class="astro-gnoq344e" style="--depth: 1;"> <li class="astro-gnoq344e" style="--depth: 1;"> <a href="#1-choose-a-polarity" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">1. Choose a Polarity</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#2-choose-your-intents" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">2. Choose Your Intents</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#3-set-the-awareness-substate" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">3. Set the Awareness Substate</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#4-set-duration" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">4. Set Duration</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 1;"> <a href="#5-calculate-strain-cost" class="astro-gnoq344e" style="--depth: 1;"> <span class="astro-gnoq344e" style="--depth: 1;">5. Calculate Strain Cost</span> </a>  </li> </ul> </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#power-scaling" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Power Scaling</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#creation-abilities" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Creation Abilities</span> </a>  </li><li class="astro-gnoq344e" style="--depth: 0;"> <a href="#examples" class="astro-gnoq344e" style="--depth: 0;"> <span class="astro-gnoq344e" style="--depth: 0;">Examples</span> </a>  </li> </ul></nav></starlight-toc></div></div> </div> </aside> <div class="main-pane astro-67yu43on">  <main data-pagefind-body class="astro-bguv2lll" lang="en" dir="ltr">    <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <h1 id="_top" class="astro-j6tvhyss">Active Abilities</h1> </div> </div> <div class="content-panel astro-7nkwcw3z"> <div class="sl-container astro-7nkwcw3z"> <div class="sl-markdown-content"> <p>Active abilities are the primary expression of a character’s Ren. Every active ability is built from a polarity, one or more intents, an awareness substate, and a duration. The polarity is the creative center: it determines what the ability looks like, feels like, and can plausibly do. Everything else classifies how it works.</p>
 <p>Creating a new active ability requires <strong>4 practice sessions</strong>, each taken during a rest period. Your starting abilities are ones your character already knows before the game begins.</p>
-<p><strong>Maximum active abilities: Realm × 5.</strong> The recommended working set is 5-8.</p>
+<p><strong>Maximum active abilities: 20.</strong> The recommended working set is 5-8.</p>
 <hr>
-<div class="sl-heading-wrapper level-h2"><h2 id="construction-step-by-step">Construction: Step by Step</h2><a class="sl-anchor-link" href="#construction-step-by-step"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “Construction: Step by Step”</span></a></div>
+<div class="sl-heading-wrapper level-h2"><h2 id="construction">Construction</h2><a class="sl-anchor-link" href="#construction"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “Construction”</span></a></div>
 <div class="sl-heading-wrapper level-h3"><h3 id="1-choose-a-polarity">1. Choose a Polarity</h3><a class="sl-anchor-link" href="#1-choose-a-polarity"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “1. Choose a Polarity”</span></a></div>
 <p>Every ability is rooted in one of your polarities. The polarity sets the conceptual boundary of what the ability can do. The connection between the polarity and the ability’s effect must be coherent. Heat polarity drawing warmth out of a room is valid. Heat polarity generating shadow is not.</p>
-<div class="sl-heading-wrapper level-h3"><h3 id="2-write-the-description">2. Write the Description</h3><a class="sl-anchor-link" href="#2-write-the-description"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “2. Write the Description”</span></a></div>
-<p>Describe what the ability does in plain terms. Be specific about the effect, not just the flavor.</p>
-<div class="sl-heading-wrapper level-h3"><h3 id="3-set-the-awareness-state">3. Set the Awareness State</h3><a class="sl-anchor-link" href="#3-set-the-awareness-state"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “3. Set the Awareness State”</span></a></div>
-<p>The Awareness state determines how the ability targets:</p>
+<p>Describe what the ability does in terms of your polarity first. The steps that follow classify what you’ve described.</p>
+<div class="sl-heading-wrapper level-h3"><h3 id="2-choose-your-intents">2. Choose Your Intents</h3><a class="sl-anchor-link" href="#2-choose-your-intents"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “2. Choose Your Intents”</span></a></div>
+<p>Intents are the mechanical verbs of an ability. Each intent describes one thing the ability does. Every intent adds 1 to the ability’s complexity.</p>
 
 
 
@@ -102,9 +101,6 @@
 
 
 
-<table><thead><tr><th>State</th><th>Targeting</th></tr></thead><tbody><tr><td>Cloaked / Suppressed</td><td>Self, touch, or traveling outward from your body</td></tr><tr><td>Extended</td><td>Area centered on you (auras, emanations)</td></tr><tr><td>Focused</td><td>Specific location or entity (directed blasts, summons, hexes, teleportation)</td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h3"><h3 id="4-list-intents">4. List Intents</h3><a class="sl-anchor-link" href="#4-list-intents"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “4. List Intents”</span></a></div>
-<p>Intents describe what the ability is mechanically <em>doing</em>. Each intent listed contributes 1 to the ability’s complexity.</p>
 
 
 
@@ -166,8 +162,6 @@
 
 
 
-<table><thead><tr><th>Intent</th><th>What It Does</th></tr></thead><tbody><tr><td>Know</td><td>Gain information</td></tr><tr><td>Hide</td><td>Conceal something</td></tr><tr><td>Convince</td><td>Influence a mind</td></tr><tr><td>Create</td><td>Make something</td></tr><tr><td>Recover</td><td>Restore or heal</td></tr><tr><td>Seize</td><td>Grab, hold, restrain</td></tr><tr><td>Dodge</td><td>Avoid an effect</td></tr><tr><td>Guard</td><td>Protect against an effect</td></tr><tr><td>Harm</td><td>Deal damage</td></tr><tr><td>Condition</td><td>Apply a status effect</td></tr><tr><td>Teleport</td><td>Instant relocation</td></tr><tr><td>Move</td><td>Physical displacement</td></tr><tr><td>Cast[X]</td><td>Project a specific effect at range</td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h3"><h3 id="5-set-duration-type">5. Set Duration Type</h3><a class="sl-anchor-link" href="#5-set-duration-type"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “5. Set Duration Type”</span></a></div>
 
 
 
@@ -176,6 +170,12 @@
 
 
 
+<table><thead><tr><th>Intent</th><th>What It Does</th><th>Strain Cost</th></tr></thead><tbody><tr><td>Harm</td><td>Deal damage</td><td>1</td></tr><tr><td>Guard</td><td>Protect against an effect, absorb damage</td><td>1</td></tr><tr><td>Dodge</td><td>Avoid an effect entirely</td><td>1</td></tr><tr><td>Heal</td><td>Repair a wound, clear a condition, stabilize</td><td>1</td></tr><tr><td>Recover</td><td>Enhance Strain recovery during rest</td><td>3</td></tr><tr><td>Seize</td><td>Grab, hold, restrain, immobilize</td><td>1</td></tr><tr><td>Move</td><td>Physically displace self</td><td>1</td></tr><tr><td>Displace</td><td>Physically displace target</td><td>1</td></tr><tr><td>Teleport</td><td>Instant relocation</td><td>2</td></tr><tr><td>Condition [X]</td><td>Apply a status effect or debuff</td><td>1</td></tr><tr><td>Hide</td><td>Conceal something, disguise, obscure</td><td>1</td></tr><tr><td>Know</td><td>Gain information, detect, perceive, analyze</td><td>1</td></tr><tr><td>Convince</td><td>Influence a mind, persuade, intimidate, deceive</td><td>1</td></tr><tr><td>Create</td><td>Make something: an object, entity, terrain, or structure from materials</td><td>0</td></tr><tr><td>Manifest</td><td>Make something: an object, entity, terrain, or structure without materials</td><td>1</td></tr><tr><td>Cast [X]</td><td>Usually only for created things, it casts this ability on its own</td><td>1</td></tr></tbody></table>
+<p>Abilities can have multiple intents. A single Harm costs 1. Harm + Condition costs 2. Harm + Condition + Move costs 3. Each intent stacked increases the ability’s complexity and cost.</p>
+<div class="sl-heading-wrapper level-h3"><h3 id="3-set-the-awareness-substate">3. Set the Awareness Substate</h3><a class="sl-anchor-link" href="#3-set-the-awareness-substate"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “3. Set the Awareness Substate”</span></a></div>
+<p>Your awareness state determines where the ability targets and what spatial pattern it takes. Choose an awareness state and a substate within it. The substate’s complexity covers both range and targeting in one number.</p>
+<div class="sl-heading-wrapper level-h4"><h4 id="suppressed">Suppressed</h4><a class="sl-anchor-link" href="#suppressed"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “Suppressed”</span></a></div>
+<p>The ability originates from your body. Self, touch, or traveling outward.</p>
 
 
 
@@ -193,8 +193,6 @@
 
 
 
-<table><thead><tr><th>Type</th><th>Complexity</th></tr></thead><tbody><tr><td>Sparked</td><td>0</td></tr><tr><td>Maintained</td><td>1</td></tr><tr><td>Charged</td><td>2</td></tr><tr><td>Stabilized</td><td>3</td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h3"><h3 id="6-set-duration-frame">6. Set Duration Frame</h3><a class="sl-anchor-link" href="#6-set-duration-frame"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “6. Set Duration Frame”</span></a></div>
 
 
 
@@ -203,6 +201,9 @@
 
 
 
+<table><thead><tr><th>Substate</th><th>Description</th><th>Strain Cost</th></tr></thead><tbody><tr><td>Touch</td><td>Self or direct contact</td><td>+0</td></tr><tr><td>Arc</td><td>Cone or sweep outward from you</td><td>+1</td></tr><tr><td>Line</td><td>Beam from you through targets in its path</td><td>+1</td></tr></tbody></table>
+<div class="sl-heading-wrapper level-h4"><h4 id="extended">Extended</h4><a class="sl-anchor-link" href="#extended"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “Extended”</span></a></div>
+<p>The ability radiates outward from you in all directions. Can filter for allies. Radius scales with Realm. Not every intent can be used in Extended awareness: intents that require specific targets, create objects, or summon entities cannot be Extended.</p>
 
 
 
@@ -218,6 +219,11 @@
 
 
 
+<table><thead><tr><th>Substate</th><th>Description</th><th>Strain Cost</th></tr></thead><tbody><tr><td>Aura</td><td>Radial field around you</td><td>+1</td></tr></tbody></table>
+<p><strong>Can be Extended:</strong> Harm, Guard, Move, Displace, Heal, Recover, Condition, Hide, Know, Convince.</p>
+<p><strong>Cannot be Extended:</strong> Dodge, Seize, Teleport, Create, Manifest, Cast[X].</p>
+<div class="sl-heading-wrapper level-h4"><h4 id="focused">Focused</h4><a class="sl-anchor-link" href="#focused"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “Focused”</span></a></div>
+<p>The ability targets or manifests at a specific location, entity, or point at range.</p>
 
 
 
@@ -228,8 +234,6 @@
 
 
 
-<table><thead><tr><th>Frame</th><th>Complexity</th></tr></thead><tbody><tr><td>Exchange</td><td>1</td></tr><tr><td>Encounter</td><td>2</td></tr><tr><td>Engagement</td><td>3</td></tr><tr><td>Exploration</td><td>4</td></tr><tr><td>Expedition</td><td>5</td></tr><tr><td>Permanent</td><td>6</td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h3"><h3 id="7-set-area">7. Set Area</h3><a class="sl-anchor-link" href="#7-set-area"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “7. Set Area”</span></a></div>
 
 
 
@@ -255,8 +259,10 @@
 
 
 
-<table><thead><tr><th>Area</th><th>Complexity</th></tr></thead><tbody><tr><td>N/A</td><td>0</td></tr><tr><td>3 Targets</td><td>1</td></tr><tr><td>2D</td><td>2</td></tr><tr><td>3D</td><td>3</td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h3"><h3 id="8-set-area-radius">8. Set Area Radius</h3><a class="sl-anchor-link" href="#8-set-area-radius"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “8. Set Area Radius”</span></a></div>
+<table><thead><tr><th>Substate</th><th>Description</th><th>Strain Cost</th></tr></thead><tbody><tr><td>Single</td><td>One target at range</td><td>+1</td></tr><tr><td>Chain</td><td>Arcs between spread targets</td><td>+2</td></tr><tr><td>Area</td><td>Around a point at range</td><td>+2</td></tr><tr><td>Barrier</td><td>Wall or enclosure at range</td><td>+2</td></tr><tr><td>Wide</td><td>Large radius, zone-scale</td><td>+3</td></tr></tbody></table>
+<p>If your awareness state changes while a sustained ability is active, the ability drops.</p>
+<div class="sl-heading-wrapper level-h3"><h3 id="4-set-duration">4. Set Duration</h3><a class="sl-anchor-link" href="#4-set-duration"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “4. Set Duration”</span></a></div>
+<p>Duration determines how long the ability lasts.</p>
 
 
 
@@ -282,8 +288,6 @@
 
 
 
-<table><thead><tr><th>Radius</th><th>Complexity</th></tr></thead><tbody><tr><td>Band 2</td><td>1</td></tr><tr><td>Band 3</td><td>2</td></tr><tr><td>Band 4 / Zone</td><td>3</td></tr><tr><td>Band 5-6</td><td>4</td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h3"><h3 id="9-set-type">9. Set Type</h3><a class="sl-anchor-link" href="#9-set-type"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “9. Set Type”</span></a></div>
 
 
 
@@ -294,63 +298,185 @@
 
 
 
-
-
-
-
-
-
-
-<table><thead><tr><th>Type</th><th>Complexity</th></tr></thead><tbody><tr><td>Effect or Projectile</td><td>0</td></tr><tr><td>Construct</td><td>1</td></tr></tbody></table>
-<div class="sl-heading-wrapper level-h3"><h3 id="10-calculate-ability-realm-ar">10. Calculate Ability Realm (AR)</h3><a class="sl-anchor-link" href="#10-calculate-ability-realm-ar"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “10. Calculate Ability Realm (AR)”</span></a></div>
-<p><strong>AR = Total Complexity / 2, rounded down.</strong></p>
-<p>AR is used to determine the Strain cost to cast and is the term used when discussing an ability’s power tier. It is distinct from Armor Strain (AS).</p>
-<hr>
-<div class="sl-heading-wrapper level-h2"><h2 id="cast-cost">Cast Cost</h2><a class="sl-anchor-link" href="#cast-cost"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “Cast Cost”</span></a></div>
-<p>The Strain cost to activate an ability depends on its AR relative to your current Realm:</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<table><thead><tr><th>AR vs Your Realm</th><th>Strain Cost</th></tr></thead><tbody><tr><td>AR is 2 or more below your Realm</td><td>0</td></tr><tr><td>AR is 1 below your Realm</td><td>1</td></tr><tr><td>AR equals your Realm</td><td>2</td></tr><tr><td>AR exceeds your Realm</td><td>4</td></tr></tbody></table>
+<table><thead><tr><th>Duration</th><th>Relative Timeline</th><th>Strain Cost</th></tr></thead><tbody><tr><td>Instant</td><td>Resolves immediately. One round of action, a single swing, a single moment.</td><td>+0</td></tr><tr><td>Charged</td><td>Lies dormant until triggered, activates once, then disappears.</td><td>+1</td></tr><tr><td>Sustained</td><td>Lasts a frame. A tavern negotiation, a battle, a chase through the streets. Drops if your awareness state changes.</td><td>+1</td></tr><tr><td>Persistent</td><td>Lasts across multiple scenes, a stretch of travel, or longer. Strategic investment.</td><td>+2</td></tr><tr><td>Permanent</td><td>Until destroyed or dispelled. Outlasts the caster.</td><td>+4</td></tr></tbody></table>
+<div class="sl-heading-wrapper level-h3"><h3 id="5-calculate-strain-cost">5. Calculate Strain Cost</h3><a class="sl-anchor-link" href="#5-calculate-strain-cost"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “5. Calculate Strain Cost”</span></a></div>
+<p>Add up the Strain cost from each component: intents, awareness substate, and duration.</p>
+<p><strong>Strain Cost = Intents + Awareness Substate + Duration</strong></p>
+<p>That total is what you pay to activate the ability. If the total is less than or equal to your Realm, the ability costs 0 Strain.</p>
+<p>Additional Strain can be spent at cast time to increase the ability’s power (see Power Scaling below).</p>
 <hr>
 <div class="sl-heading-wrapper level-h2"><h2 id="power-scaling">Power Scaling</h2><a class="sl-anchor-link" href="#power-scaling"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “Power Scaling”</span></a></div>
-<p>For non-summon abilities, power scales with how many additional polarity dice you invest in the roll at cast time. Each extra polarity die added beyond your free pool costs 1 Strain.</p>
-<p>For <strong>summon and construct</strong> abilities, AR determines the Strain cost to cast, but the summon’s actual output power (stats, Strain pool, capabilities) is determined by the <strong>Realm of the materials</strong> used in its creation. A summon’s base Strain is its Tier + 1.</p>
+<p>The base Strain cost gets the ability off. Power is dependent on your roll, how much strain was spent, and scales by investing additional Strain at cast time.</p>
+<p><strong>Resisted effects</strong> (Harm, Seize, Convince, and similar): each extra Strain spent adds another polarity die to the roll. More dice means a bigger pool and better odds of overcoming the target.</p>
+<p><strong>Unresisted effects</strong> (Heal, Create, and similar): each extra Strain spent directly increases the magnitude of the effect. By default, the magnitude is 1 unless you add more.</p>
 <hr>
-<div class="sl-heading-wrapper level-h2"><h2 id="example">Example</h2><a class="sl-anchor-link" href="#example"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “Example”</span></a></div>
-<p><strong>Ash Step</strong></p>
+<div class="sl-heading-wrapper level-h2"><h2 id="creation-abilities">Creation Abilities</h2><a class="sl-anchor-link" href="#creation-abilities"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “Creation Abilities”</span></a></div>
+<p>The Create intent covers objects, entities, terrain, and structures. What you can create and how powerful it is depends on the method:</p>
+<p><strong>With materials</strong> (forging a sword, raising a corpse, building a wall from stone): the creation’s power equals the <strong>Realm of the materials</strong> used. Better materials hold more Ren.</p>
+<p><strong>From pure Ren</strong> (conjuring a spectral tool, summoning an entity from nothing): the creation’s power equals <strong>your Realm</strong>. The entity or object is a projection of your own will.</p>
+<p>The scale of the creation (how large it is) is determined by the extra Strain invested at cast time, following the unresisted power scaling rule. The GM determines what is plausible given the polarity and the Strain invested.</p>
+<p><strong>Creation intents are part of the ability.</strong> If a created entity or object is meant to do something on its own, the intents for what it does must be included in the ability’s construction. A summoned guardian that can Harm on its own requires both Create (or Manifest) and Harm as intents. A conjured trap that applies a Condition requires Create and Condition. The Cast[X] intent allows a creation to use a specific ability independently. All of these intents add to the ability’s total Strain cost.</p>
+<hr>
+<div class="sl-heading-wrapper level-h2"><h2 id="examples">Examples</h2><a class="sl-anchor-link" href="#examples"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “Examples”</span></a></div>
+<p><strong>Ash Step</strong> (teleport self, touch)</p>
 <ul>
+<li><em>Touch a pile of ash, bone, or remains and dissolve into it. Reform instantly at another source of remains you are aware of within your vicinity.</em></li>
 <li>Polarity: Remains</li>
-<li>Description: Dissolve your body into ash and reform at a nearby location.</li>
-<li>Awareness: Focused</li>
-<li>Intents: Teleport (1)</li>
-<li>Duration Type: Sparked (0)</li>
-<li>Duration Frame: Exchange (1)</li>
-<li>Area: N/A (0)</li>
-<li>Area Radius: N/A (0)</li>
-<li>Type: Effect (0)</li>
-<li><strong>Total Complexity: 2. AR = 1.</strong></li>
+<li>Intents: Teleport (2)</li>
+<li>Awareness: Suppressed-Touch (+0)</li>
+<li>Duration: Instant (+0)</li>
+<li><strong>Strain Cost: 2.</strong> Free at Realm 2+.</li>
 </ul>
-<p>At Realm 1, this costs 2 Strain to cast. At Realm 2, it costs 1 Strain.</p> </div> <footer class="sl-flex astro-3yyafb3n"> <div class="meta sl-flex astro-3yyafb3n">   </div> <div class="pagination-links print:hidden astro-u2l5gyhi" dir="ltr"> <a href="/metanoia-wiki/rules/ren-texture/" rel="prev" class="astro-u2l5gyhi"> <svg aria-hidden="true" class="astro-u2l5gyhi astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17 11H9.41l3.3-3.29a1.004 1.004 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33 1 1 0 0 0 0 .76 1 1 0 0 0 .21.33l5 5a1.002 1.002 0 0 0 1.639-.325 1 1 0 0 0-.219-1.095L9.41 13H17a1 1 0 0 0 0-2Z"/></svg> <span class="astro-u2l5gyhi"> Previous <br class="astro-u2l5gyhi"> <span class="link-title astro-u2l5gyhi">Ren Texture</span> </span> </a> <a href="/metanoia-wiki/rules/abilities/passive-abilities/" rel="next" class="astro-u2l5gyhi"> <svg aria-hidden="true" class="astro-u2l5gyhi astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"/></svg> <span class="astro-u2l5gyhi"> Next <br class="astro-u2l5gyhi"> <span class="link-title astro-u2l5gyhi">Passive Abilities</span> </span> </a> </div>  </footer> <div class="license-link astro-sz7xmlte"> <a href="/metanoia-wiki/license/" class="astro-sz7xmlte">License</a> </div> </div> </div>  </main> </div> </div> </div> </div> </body></html>
+<p><strong>Ash Step, Focused</strong> (teleport self, ranged)</p>
+<ul>
+<li><em>Dissolve into ash and reform at any source of remains you can perceive within your Focused awareness range. Does not require contact with remains at origin.</em></li>
+<li>Polarity: Remains</li>
+<li>Intents: Teleport (2)</li>
+<li>Awareness: Focused-Single (+1)</li>
+<li>Duration: Instant (+0)</li>
+<li><strong>Strain Cost: 3.</strong> Free at Realm 3+.</li>
+</ul>
+<p><strong>Fire Bolt</strong> (ranged single-target damage)</p>
+<ul>
+<li><em>Hurl a compact bolt of superheated flame at a target you can perceive.</em></li>
+<li>Polarity: Heat</li>
+<li>Intents: Harm (1)</li>
+<li>Awareness: Focused-Single (+1)</li>
+<li>Duration: Instant (+0)</li>
+<li><strong>Strain Cost: 2.</strong> Free at Realm 2+.</li>
+</ul>
+<p><strong>Healing Touch</strong> (close a wound)</p>
+<ul>
+<li><em>Press your hands against a wound and push vitality directly into the tissue, knitting flesh and clearing the wound condition. Does not restore Strain; the body must recover that on its own.</em></li>
+<li>Polarity: Life</li>
+<li>Intents: Heal (1)</li>
+<li>Awareness: Suppressed-Touch (+0)</li>
+<li>Duration: Instant (+0)</li>
+<li><strong>Strain Cost: 1.</strong> Free at Realm 1+.</li>
+</ul>
+<p><strong>Camp Recovery</strong> (enhance rest)</p>
+<ul>
+<li><em>Suffuse a resting ally with restorative energy, accelerating the rate at which their body replenishes Strain overnight.</em></li>
+<li>Polarity: Life</li>
+<li>Intents: Recover (3)</li>
+<li>Awareness: Suppressed-Touch (+0)</li>
+<li>Duration: Persistent (+2)</li>
+<li><strong>Strain Cost: 5.</strong> Free at Realm 5+.</li>
+</ul>
+<p><strong>Bonfire Aura</strong> (sustained damage field around you)</p>
+<ul>
+<li><em>Radiate waves of searing heat in all directions. Everything nearby burns for as long as you maintain focus.</em></li>
+<li>Polarity: Heat</li>
+<li>Intents: Harm (1)</li>
+<li>Awareness: Extended-Aura (+1)</li>
+<li>Duration: Sustained (+1)</li>
+<li><strong>Strain Cost: 3.</strong> Free at Realm 3+.</li>
+</ul>
+<p><strong>Iron Cage</strong> (restrain a distant target)</p>
+<ul>
+<li><em>Metal erupts from the ground or ambient material at a target’s location, forming bands that lock them in place.</em></li>
+<li>Polarity: Metal</li>
+<li>Intents: Seize (1)</li>
+<li>Awareness: Focused-Single (+1)</li>
+<li>Duration: Sustained (+1)</li>
+<li><strong>Strain Cost: 3.</strong> Free at Realm 3+.</li>
+</ul>
+<p><strong>Lightning Chain</strong> (damage arcing between enemies)</p>
+<ul>
+<li><em>A bolt of electromagnetic force strikes one target and arcs to others nearby, jumping between conductive bodies.</em></li>
+<li>Polarity: Electromagnetism</li>
+<li>Intents: Harm (1)</li>
+<li>Awareness: Focused-Chain (+2)</li>
+<li>Duration: Instant (+0)</li>
+<li><strong>Strain Cost: 3.</strong> Free at Realm 3+.</li>
+</ul>
+<p><strong>Silver Tongue</strong> (shift someone’s opinion in conversation)</p>
+<ul>
+<li><em>Weave subtle distortions into your words. The target’s perception of the conversation shifts toward the meaning you intend, not the one you spoke.</em></li>
+<li>Polarity: Deceit</li>
+<li>Intents: Convince (1)</li>
+<li>Awareness: Suppressed-Touch (+0)</li>
+<li>Duration: Sustained (+1)</li>
+<li><strong>Strain Cost: 2.</strong> Free at Realm 2+.</li>
+</ul>
+<p><strong>Firestorm</strong> (massive area damage)</p>
+<ul>
+<li><em>Ignite a massive region of air and material at a distant point. Everything within the zone burns.</em></li>
+<li>Polarity: Heat</li>
+<li>Intents: Harm (1)</li>
+<li>Awareness: Focused-Wide (+3)</li>
+<li>Duration: Instant (+0)</li>
+<li><strong>Strain Cost: 4.</strong> Free at Realm 4+.</li>
+</ul>
+<p><strong>Flame Wall</strong> (barrier of fire at range)</p>
+<ul>
+<li><em>Raise a sustained curtain of fire at a location, blocking passage and burning anything that crosses it.</em></li>
+<li>Polarity: Heat</li>
+<li>Intents: Guard + Harm (2)</li>
+<li>Awareness: Focused-Barrier (+2)</li>
+<li>Duration: Sustained (+1)</li>
+<li><strong>Strain Cost: 5.</strong> Free at Realm 5+.</li>
+</ul>
+<p><strong>Burning Shackles</strong> (damage + restrain, single target)</p>
+<ul>
+<li><em>Bands of molten metal form around a target at range, locking their limbs and searing their flesh as long as you maintain focus.</em></li>
+<li>Polarity: Heat</li>
+<li>Intents: Harm + Seize (2)</li>
+<li>Awareness: Focused-Single (+1)</li>
+<li>Duration: Sustained (+1)</li>
+<li><strong>Strain Cost: 4.</strong> Free at Realm 4+.</li>
+</ul>
+<p><strong>Spectral Lockpick</strong> (conjure a small tool from Ren)</p>
+<ul>
+<li><em>Shape a sliver of pure Ren into a functional tool: a lockpick, a pry bar, a needle. It holds its form for hours before dissolving.</em></li>
+<li>Polarity: Spirit</li>
+<li>Intents: Manifest (1)</li>
+<li>Awareness: Suppressed-Touch (+0)</li>
+<li>Duration: Persistent (+2)</li>
+<li><strong>Strain Cost: 3.</strong> Free at Realm 3+.</li>
+</ul>
+<p><strong>Enchanted Sword</strong> (permanently imbue a real blade with fire)</p>
+<ul>
+<li><em>Heat a physical blade in your hands and bind your Ren into the metal. The weapon permanently carries the essence of flame, dealing fire damage on contact.</em></li>
+<li>Polarity: Heat</li>
+<li>Intents: Create + Harm (1)</li>
+<li>Awareness: Suppressed-Touch (+0)</li>
+<li>Duration: Permanent (+4)</li>
+<li><strong>Strain Cost: 5.</strong> Free at Realm 5+.</li>
+</ul>
+<p><strong>Skeleton Soldier</strong> (raise a lasting undead from a corpse)</p>
+<ul>
+<li><em>Pour Ren into a corpse, binding death-aspected energy into its bones. The skeleton rises as a permanent servant capable of fighting, defending itself, moving independently, and perceiving threats on its own.</em></li>
+<li>Polarity: Death</li>
+<li>Intents: Create + Harm + Guard + Move + Know (4)</li>
+<li>Awareness: Focused-Single (+1)</li>
+<li>Duration: Permanent (+4)</li>
+<li><strong>Strain Cost: 9.</strong></li>
+</ul>
+<p><strong>Earthquake</strong> (reshape a wide area of terrain)</p>
+<ul>
+<li><em>Drive Ren into the ground at a distant point. The earth buckles, splits, and heaves across a massive area, throwing everyone in the zone to the ground.</em></li>
+<li>Polarity: Earth</li>
+<li>Intents: Displace + Condition[Prone] (2)</li>
+<li>Awareness: Focused-Wide (+3)</li>
+<li>Duration: Instant (+0)</li>
+<li><strong>Strain Cost: 5.</strong> Free at Realm 5+.</li>
+</ul>
+<p><strong>Bone Claymore</strong> (trap, placed at your feet)</p>
+<ul>
+<li><em>Rig a bundle of inscribed bone fragments with Ren-laced tripwire. When something steps close, the bones detonate in a burst of splintering force. Single use.</em></li>
+<li>Polarity: Ruin</li>
+<li>Intents: Cast[Harm] (1)</li>
+<li>Awareness: Suppressed-Touch (+0)</li>
+<li>Duration: Charged (+1)</li>
+<li><strong>Strain Cost: 2.</strong> Free at Realm 2+.</li>
+</ul>
+<p><strong>Spectral Claymore</strong> (trap, placed at range)</p>
+<ul>
+<li><em>Project a knot of unstable Ren at a distant point. It hangs invisible until something passes through its detection range, then detonates. Single use.</em></li>
+<li>Polarity: Ruin</li>
+<li>Intents: Cast[Harm] (1)</li>
+<li>Awareness: Focused-Single (+1)</li>
+<li>Duration: Charged (+1)</li>
+<li><strong>Strain Cost: 3.</strong> Free at Realm 3+.</li>
+</ul> </div> <footer class="sl-flex astro-3yyafb3n"> <div class="meta sl-flex astro-3yyafb3n">   </div> <div class="pagination-links print:hidden astro-u2l5gyhi" dir="ltr"> <a href="/metanoia-wiki/rules/ren-texture/" rel="prev" class="astro-u2l5gyhi"> <svg aria-hidden="true" class="astro-u2l5gyhi astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17 11H9.41l3.3-3.29a1.004 1.004 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33 1 1 0 0 0 0 .76 1 1 0 0 0 .21.33l5 5a1.002 1.002 0 0 0 1.639-.325 1 1 0 0 0-.219-1.095L9.41 13H17a1 1 0 0 0 0-2Z"/></svg> <span class="astro-u2l5gyhi"> Previous <br class="astro-u2l5gyhi"> <span class="link-title astro-u2l5gyhi">Ren Texture</span> </span> </a> <a href="/metanoia-wiki/rules/abilities/passive-abilities/" rel="next" class="astro-u2l5gyhi"> <svg aria-hidden="true" class="astro-u2l5gyhi astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"/></svg> <span class="astro-u2l5gyhi"> Next <br class="astro-u2l5gyhi"> <span class="link-title astro-u2l5gyhi">Passive Abilities</span> </span> </a> </div>  </footer> <div class="license-link astro-sz7xmlte"> <a href="/metanoia-wiki/license/" class="astro-sz7xmlte">License</a> </div> </div> </div>  </main> </div> </div> </div> </div> </body></html>
