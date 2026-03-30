@@ -170,7 +170,7 @@
 
 
 
-<table><thead><tr><th>Intent</th><th>What It Does</th><th>Strain Cost</th></tr></thead><tbody><tr><td>Harm</td><td>Deal damage</td><td>1</td></tr><tr><td>Guard</td><td>Protect against an effect, absorb damage</td><td>1</td></tr><tr><td>Dodge</td><td>Avoid an effect entirely</td><td>1</td></tr><tr><td>Heal</td><td>Repair a wound, clear a condition, stabilize</td><td>1</td></tr><tr><td>Recover</td><td>Enhance Strain recovery during rest</td><td>3</td></tr><tr><td>Seize</td><td>Grab, hold, restrain, immobilize</td><td>1</td></tr><tr><td>Move</td><td>Physically displace self</td><td>1</td></tr><tr><td>Displace</td><td>Physically displace target</td><td>1</td></tr><tr><td>Teleport</td><td>Instant relocation</td><td>2</td></tr><tr><td>Condition [X]</td><td>Apply a status effect or debuff</td><td>1</td></tr><tr><td>Hide</td><td>Conceal something, disguise, obscure</td><td>1</td></tr><tr><td>Know</td><td>Gain information, detect, perceive, analyze</td><td>1</td></tr><tr><td>Convince</td><td>Influence a mind, persuade, intimidate, deceive</td><td>1</td></tr><tr><td>Create</td><td>Make something: an object, entity, terrain, or structure from materials</td><td>0</td></tr><tr><td>Manifest</td><td>Make something: an object, entity, terrain, or structure without materials</td><td>1</td></tr><tr><td>Cast [X]</td><td>Usually only for created things, it casts this ability on its own</td><td>1</td></tr></tbody></table>
+<table><thead><tr><th>Intent</th><th>What It Does</th><th>Strain Cost</th></tr></thead><tbody><tr><td>Harm</td><td>Deal damage</td><td>1</td></tr><tr><td>Guard</td><td>Protect against an effect, absorb damage</td><td>2</td></tr><tr><td>Dodge</td><td>Avoid an effect entirely, up to your stride</td><td>2</td></tr><tr><td>Heal</td><td>Repair a wound, clear a condition, stabilize</td><td>1</td></tr><tr><td>Recover</td><td>Enhance Strain recovery during rest</td><td>3</td></tr><tr><td>Seize</td><td>Grab, hold, restrain, immobilize</td><td>1</td></tr><tr><td>Move</td><td>Physically displace self, up to your stride</td><td>1</td></tr><tr><td>Displace</td><td>Physically displace target</td><td>1</td></tr><tr><td>Teleport</td><td>Instant relocation</td><td>2</td></tr><tr><td>Condition [X]</td><td>Apply a status effect or debuff</td><td>1</td></tr><tr><td>Hide</td><td>Conceal something, disguise, obscure</td><td>1</td></tr><tr><td>Know</td><td>Gain information, detect, perceive, analyze</td><td>1</td></tr><tr><td>Convince</td><td>Influence a mind, persuade, intimidate, deceive</td><td>1</td></tr><tr><td>Create</td><td>Make something: an object, entity, terrain, or structure from materials</td><td>0</td></tr><tr><td>Manifest</td><td>Make something: an object, entity, terrain, or structure without materials</td><td>1</td></tr><tr><td>Cast [X]</td><td>Only for created or manifested things. The creation casts this ability on its own.</td><td>1</td></tr></tbody></table>
 <p>Abilities can have multiple intents. A single Harm costs 1. Harm + Condition costs 2. Harm + Condition + Move costs 3. Each intent stacked increases the ability’s complexity and cost.</p>
 <div class="sl-heading-wrapper level-h3"><h3 id="3-set-the-awareness-substate">3. Set the Awareness Substate</h3><a class="sl-anchor-link" href="#3-set-the-awareness-substate"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “3. Set the Awareness Substate”</span></a></div>
 <p>Your awareness state determines where the ability targets and what spatial pattern it takes. Choose an awareness state and a substate within it. The substate’s complexity covers both range and targeting in one number.</p>
@@ -259,7 +259,12 @@
 
 
 
-<table><thead><tr><th>Substate</th><th>Description</th><th>Strain Cost</th></tr></thead><tbody><tr><td>Single</td><td>One target at range</td><td>+1</td></tr><tr><td>Chain</td><td>Arcs between spread targets</td><td>+2</td></tr><tr><td>Area</td><td>Around a point at range</td><td>+2</td></tr><tr><td>Barrier</td><td>Wall or enclosure at range</td><td>+2</td></tr><tr><td>Wide</td><td>Large radius, zone-scale</td><td>+3</td></tr></tbody></table>
+
+
+
+
+
+<table><thead><tr><th>Substate</th><th>Description</th><th>Strain Cost</th></tr></thead><tbody><tr><td>Single</td><td>One target at range</td><td>+1</td></tr><tr><td>Ricochet</td><td>Hits a total of 2 targets</td><td>+2</td></tr><tr><td>Chain</td><td>Hits a total of 3 targets</td><td>+3</td></tr><tr><td>Narrow</td><td>Around a point at range (radius 1)</td><td>+2</td></tr><tr><td>Wide</td><td>Around a point at range (radius 3)</td><td>+3</td></tr><tr><td>Massive</td><td>Around a point at range (radius 5)</td><td>+4</td></tr></tbody></table>
 <p>If your awareness state changes while a sustained ability is active, the ability drops.</p>
 <div class="sl-heading-wrapper level-h3"><h3 id="4-set-duration">4. Set Duration</h3><a class="sl-anchor-link" href="#4-set-duration"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “4. Set Duration”</span></a></div>
 <p>Duration determines how long the ability lasts.</p>
@@ -383,12 +388,12 @@
 </ul>
 <p><strong>Lightning Chain</strong> (damage arcing between enemies)</p>
 <ul>
-<li><em>A bolt of electromagnetic force strikes one target and arcs to others nearby, jumping between conductive bodies.</em></li>
+<li><em>A bolt of electromagnetic force strikes one target and arcs to two others nearby, jumping between conductive bodies.</em></li>
 <li>Polarity: Electromagnetism</li>
 <li>Intents: Harm (1)</li>
-<li>Awareness: Focused-Chain (+2)</li>
+<li>Awareness: Focused-Chain (+3)</li>
 <li>Duration: Instant (+0)</li>
-<li><strong>Strain Cost: 3.</strong> Free at Realm 3+.</li>
+<li><strong>Strain Cost: 4.</strong> Free at Realm 4+.</li>
 </ul>
 <p><strong>Silver Tongue</strong> (shift someone’s opinion in conversation)</p>
 <ul>
@@ -408,14 +413,14 @@
 <li>Duration: Instant (+0)</li>
 <li><strong>Strain Cost: 4.</strong> Free at Realm 4+.</li>
 </ul>
-<p><strong>Flame Wall</strong> (barrier of fire at range)</p>
+<p><strong>Flame Wall</strong> (sustained fire zone at range)</p>
 <ul>
-<li><em>Raise a sustained curtain of fire at a location, blocking passage and burning anything that crosses it.</em></li>
+<li><em>Raise a sustained column of fire around a point at range, blocking passage and burning anything that crosses it.</em></li>
 <li>Polarity: Heat</li>
-<li>Intents: Guard + Harm (2)</li>
-<li>Awareness: Focused-Barrier (+2)</li>
+<li>Intents: Guard + Harm (3)</li>
+<li>Awareness: Focused-Narrow (+2)</li>
 <li>Duration: Sustained (+1)</li>
-<li><strong>Strain Cost: 5.</strong> Free at Realm 5+.</li>
+<li><strong>Strain Cost: 6.</strong> Free at Realm 6+.</li>
 </ul>
 <p><strong>Burning Shackles</strong> (damage + restrain, single target)</p>
 <ul>
@@ -448,10 +453,10 @@
 <ul>
 <li><em>Pour Ren into a corpse, binding death-aspected energy into its bones. The skeleton rises as a permanent servant capable of fighting, defending itself, moving independently, and perceiving threats on its own.</em></li>
 <li>Polarity: Death</li>
-<li>Intents: Create + Harm + Guard + Move + Know (4)</li>
+<li>Intents: Create + Harm + Guard + Move + Know (5)</li>
 <li>Awareness: Focused-Single (+1)</li>
 <li>Duration: Permanent (+4)</li>
-<li><strong>Strain Cost: 9.</strong></li>
+<li><strong>Strain Cost: 10.</strong></li>
 </ul>
 <p><strong>Earthquake</strong> (reshape a wide area of terrain)</p>
 <ul>
