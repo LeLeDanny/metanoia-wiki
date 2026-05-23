@@ -170,7 +170,7 @@
 
 
 
-<table><thead><tr><th>Intent</th><th>What It Does</th><th>Strain Cost</th></tr></thead><tbody><tr><td>Cast [X]</td><td>Only for created or manifested things. The creation casts this ability on its own.</td><td>1</td></tr><tr><td>Convince</td><td>Influence a mind, persuade, intimidate, deceive</td><td>1</td></tr><tr><td>Condition [X]</td><td>Apply a status condition</td><td>1</td></tr><tr><td>Create</td><td>Make something: an object, entity, terrain, or structure from materials</td><td>0</td></tr><tr><td>Displace</td><td>Physically displace target</td><td>1</td></tr><tr><td>Dodge</td><td>Avoid an effect entirely, up to your stride</td><td>2</td></tr><tr><td>Guard</td><td>Protect against an effect, absorb damage</td><td>2</td></tr><tr><td>Harm</td><td>Deal damage</td><td>1</td></tr><tr><td>Heal</td><td>Repair a wound, clear a condition, stabilize</td><td>1</td></tr><tr><td>Hide</td><td>Conceal something, disguise, obscure</td><td>1</td></tr><tr><td>Know</td><td>Gain information, detect, perceive, analyze</td><td>1</td></tr><tr><td>Manifest</td><td>Make something: an object, entity, terrain, or structure without materials</td><td>1</td></tr><tr><td>Move</td><td>Physically displace self, up to your stride</td><td>1</td></tr><tr><td>Recover</td><td>Enhance Strain recovery during rest</td><td>3</td></tr><tr><td>Seize</td><td>Grab, hold, restrain, immobilize</td><td>1</td></tr><tr><td>Teleport</td><td>Instant relocation</td><td>2</td></tr></tbody></table>
+<table><thead><tr><th>Intent</th><th>What It Does</th><th>Strain Cost</th></tr></thead><tbody><tr><td>Cast [X]</td><td>Only for created or manifested things. The creation casts this ability on its own.</td><td>1</td></tr><tr><td>Convince</td><td>Influence a mind, persuade, intimidate, deceive</td><td>1</td></tr><tr><td>Condition [X]</td><td>Apply a status condition</td><td>Varies</td></tr><tr><td>Create</td><td>Make something: an object, entity, terrain, or structure from materials</td><td>0</td></tr><tr><td>Displace</td><td>Physically displace target</td><td>1</td></tr><tr><td>Dodge</td><td>Avoid an effect entirely, up to your stride</td><td>2</td></tr><tr><td>Guard</td><td>Protect against an effect, absorb damage</td><td>2</td></tr><tr><td>Harm</td><td>Deal damage</td><td>1</td></tr><tr><td>Heal</td><td>Repair a wound, clear a condition, stabilize</td><td>1</td></tr><tr><td>Hide</td><td>Conceal something, disguise, obscure</td><td>1</td></tr><tr><td>Know</td><td>Gain information, detect, perceive, analyze</td><td>1</td></tr><tr><td>Manifest</td><td>Make something: an object, entity, terrain, or structure without materials</td><td>1</td></tr><tr><td>Move</td><td>Physically displace self, up to your stride</td><td>1</td></tr><tr><td>Recover</td><td>Enhance Strain recovery during rest</td><td>3</td></tr><tr><td>Seize</td><td>Grab, hold, restrain, immobilize</td><td>1</td></tr><tr><td>Teleport</td><td>Instant relocation</td><td>2</td></tr></tbody></table>
 <div class="sl-heading-wrapper level-h3"><h3 id="conditions">Conditions</h3><a class="sl-anchor-link" href="#conditions"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “Conditions”</span></a></div>
 <p>Conditions are the specific effect delivered by the Condition [X] intent.</p>
 
@@ -210,8 +210,32 @@
 
 
 
-<table><thead><tr><th>Condition</th><th>Effect</th></tr></thead><tbody><tr><td>Weakened</td><td>Target’s die steps down on specified rolls</td></tr><tr><td>Maimed</td><td>Disables a number of the target’s abilities</td></tr><tr><td>Escalating [X]</td><td>Target loses Strain equal to the condition value each round</td></tr><tr><td>Sensory Deprivation [X]</td><td>Blocks the named sense; rolls using that sense lose a die</td></tr><tr><td>Slowed</td><td>Target’s Stride is reduced</td></tr><tr><td>Elevated [X]</td><td>One die steps up on the specified roll type</td></tr><tr><td>Unimpeded</td><td>Target ignores terrain effects that reduce Stride</td></tr></tbody></table>
-<p>Abilities can have multiple intents. A single Harm costs 1. Harm + Condition costs 2. Harm + Condition + Move costs 3. Each intent stacked increases the ability’s complexity and cost.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>Condition</th><th>Effect</th><th>Strain Cost</th></tr></thead><tbody><tr><td>Weakened</td><td>Target’s die steps down on specified rolls</td><td>1</td></tr><tr><td>Maimed</td><td>Disables a number of the target’s abilities</td><td>1</td></tr><tr><td>Escalating [X]</td><td>Target loses Strain equal to the condition value each round</td><td>1</td></tr><tr><td>Sensory Deprivation [X]</td><td>Blocks the named sense; rolls using that sense lose a die</td><td>1</td></tr><tr><td>Slowed</td><td>Target’s Stride is reduced</td><td>1</td></tr><tr><td>Elevated [X]</td><td>One die steps up on the specified roll type</td><td>1</td></tr><tr><td>Unimpeded</td><td>Target ignores terrain effects that reduce Stride</td><td>1</td></tr><tr><td>Hastened</td><td>Target’s movement speed is doubled</td><td>1</td></tr><tr><td>Polarity Empowered [X]</td><td>Named polarity die steps up</td><td>2</td></tr><tr><td>Polarity Harmonization [X]</td><td>While this condition is active, using the designated polarity lets you use a conceptually related polarity for free. Only available on Harmony-polarity abilities.</td><td>3</td></tr></tbody></table>
+<p>Abilities can have multiple intents. A single Harm costs 1. Harm + Condition [Weakened] costs 2. Harm + Condition [Weakened] + Move costs 3. Each intent stacked increases the ability’s complexity and cost.</p>
+<p>The Condition [X] intent’s cost equals the sum of the strain values of all conditions chosen. Selecting Condition [Weakened] (1) and Condition [Hastened] (1) costs 2. Selecting Condition [Polarity Empowered] (2) costs 2 on its own.</p>
 <div class="sl-heading-wrapper level-h3"><h3 id="3-set-the-awareness-substate">3. Set the Awareness Substate</h3><a class="sl-anchor-link" href="#3-set-the-awareness-substate"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “3. Set the Awareness Substate”</span></a></div>
 <p>Your awareness state determines how, where, and what the ability targets, as well as what spatial pattern it takes. Choose an awareness state and a substate. The substate’s complexity covers both range and targeting in one number.</p>
 <div class="sl-heading-wrapper level-h4"><h4 id="suppressed">Suppressed</h4><a class="sl-anchor-link" href="#suppressed"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “Suppressed”</span></a></div>
@@ -375,7 +399,7 @@
 <div class="sl-heading-wrapper level-h3"><h3 id="6-calculate-strain-cost">6. Calculate Strain Cost</h3><a class="sl-anchor-link" href="#6-calculate-strain-cost"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “6. Calculate Strain Cost”</span></a></div>
 <p>Add up the Strain cost from each component, then subtract one for each restriction.</p>
 <p><strong>Strain Cost = Intents + Awareness Substate + Duration - Restrictions (minimum 0)</strong></p>
-<p>That total is what you pay to activate the ability. If the total is less than or equal to your Realm, the ability costs 0 Strain.</p>
+<p>That total is what you pay to activate the ability. If the total is less than your Realm, the ability costs 0 Strain.</p>
 <p>Additional Strain can be spent at cast time to increase the ability’s power (see Power Scaling below).</p>
 <hr>
 <div class="sl-heading-wrapper level-h2"><h2 id="power-scaling">Power Scaling</h2><a class="sl-anchor-link" href="#power-scaling"><span aria-hidden="true" class="sl-anchor-icon"><svg width="16" height="16" viewBox="0 0 24 24"><path fill="currentcolor" d="m12.11 15.39-3.88 3.88a2.52 2.52 0 0 1-3.5 0 2.47 2.47 0 0 1 0-3.5l3.88-3.88a1 1 0 0 0-1.42-1.42l-3.88 3.89a4.48 4.48 0 0 0 6.33 6.33l3.89-3.88a1 1 0 1 0-1.42-1.42Zm8.58-12.08a4.49 4.49 0 0 0-6.33 0l-3.89 3.88a1 1 0 0 0 1.42 1.42l3.88-3.88a2.52 2.52 0 0 1 3.5 0 2.47 2.47 0 0 1 0 3.5l-3.88 3.88a1 1 0 1 0 1.42 1.42l3.88-3.89a4.49 4.49 0 0 0 0-6.33ZM8.83 15.17a1 1 0 0 0 1.1.22 1 1 0 0 0 .32-.22l4.92-4.92a1 1 0 0 0-1.42-1.42l-4.92 4.92a1 1 0 0 0 0 1.42Z"></path></svg></span><span class="sr-only" data-pagefind-ignore="">Section titled “Power Scaling”</span></a></div>
@@ -398,7 +422,7 @@
 <li>Intents: Teleport (2)</li>
 <li>Awareness: Suppressed-Touch (+0)</li>
 <li>Duration: Instant (+0)</li>
-<li><strong>Strain Cost: 2.</strong> Free at Realm 2+.</li>
+<li><strong>Strain Cost: 2.</strong> Free at Realm 3+.</li>
 </ul>
 <p><strong>Ash Step, Focused</strong> (teleport self, ranged)</p>
 <ul>
@@ -407,7 +431,7 @@
 <li>Intents: Teleport (2)</li>
 <li>Awareness: Focused-Single (+1)</li>
 <li>Duration: Instant (+0)</li>
-<li><strong>Strain Cost: 3.</strong> Free at Realm 3+.</li>
+<li><strong>Strain Cost: 3.</strong> Free at Realm 4+.</li>
 </ul>
 <p><strong>Fire Bolt</strong> (ranged single-target damage)</p>
 <ul>
@@ -416,7 +440,7 @@
 <li>Intents: Harm (1)</li>
 <li>Awareness: Focused-Single (+1)</li>
 <li>Duration: Instant (+0)</li>
-<li><strong>Strain Cost: 2.</strong> Free at Realm 2+.</li>
+<li><strong>Strain Cost: 2.</strong> Free at Realm 3+.</li>
 </ul>
 <p><strong>Healing Touch</strong> (close a wound)</p>
 <ul>
@@ -425,7 +449,7 @@
 <li>Intents: Heal (1)</li>
 <li>Awareness: Suppressed-Touch (+0)</li>
 <li>Duration: Instant (+0)</li>
-<li><strong>Strain Cost: 1.</strong> Free at Realm 1+.</li>
+<li><strong>Strain Cost: 1.</strong> Free at Realm 2+.</li>
 </ul>
 <p><strong>Camp Recovery</strong> (enhance rest)</p>
 <ul>
@@ -434,7 +458,7 @@
 <li>Intents: Recover (3)</li>
 <li>Awareness: Suppressed-Touch (+0)</li>
 <li>Duration: Persistent (+3)</li>
-<li><strong>Strain Cost: 6.</strong> Free at Realm 6+.</li>
+<li><strong>Strain Cost: 6.</strong> Free at Realm 7+.</li>
 </ul>
 <p><strong>Bonfire Aura</strong> (sustained damage field around you)</p>
 <ul>
@@ -443,7 +467,7 @@
 <li>Intents: Harm (1)</li>
 <li>Awareness: Extended-Aura (+1)</li>
 <li>Duration: Sustained (+2)</li>
-<li><strong>Strain Cost: 4.</strong> Free at Realm 4+.</li>
+<li><strong>Strain Cost: 4.</strong> Free at Realm 5+.</li>
 </ul>
 <p><strong>Iron Cage</strong> (restrain a distant target)</p>
 <ul>
@@ -452,7 +476,7 @@
 <li>Intents: Seize (1)</li>
 <li>Awareness: Focused-Single (+1)</li>
 <li>Duration: Sustained (+2)</li>
-<li><strong>Strain Cost: 4.</strong> Free at Realm 4+.</li>
+<li><strong>Strain Cost: 4.</strong> Free at Realm 5+.</li>
 </ul>
 <p><strong>Lightning Chain</strong> (damage arcing between enemies)</p>
 <ul>
@@ -461,7 +485,7 @@
 <li>Intents: Harm (1)</li>
 <li>Awareness: Focused-Chain (+3)</li>
 <li>Duration: Instant (+0)</li>
-<li><strong>Strain Cost: 4.</strong> Free at Realm 4+.</li>
+<li><strong>Strain Cost: 4.</strong> Free at Realm 5+.</li>
 </ul>
 <p><strong>Silver Tongue</strong> (shift someone’s opinion in conversation)</p>
 <ul>
@@ -470,7 +494,7 @@
 <li>Intents: Convince (1)</li>
 <li>Awareness: Suppressed-Touch (+0)</li>
 <li>Duration: Sustained (+2)</li>
-<li><strong>Strain Cost: 3.</strong> Free at Realm 3+.</li>
+<li><strong>Strain Cost: 3.</strong> Free at Realm 4+.</li>
 </ul>
 <p><strong>Firestorm</strong> (massive area damage)</p>
 <ul>
@@ -479,7 +503,7 @@
 <li>Intents: Harm (1)</li>
 <li>Awareness: Focused-Wide (+3)</li>
 <li>Duration: Instant (+0)</li>
-<li><strong>Strain Cost: 4.</strong> Free at Realm 4+.</li>
+<li><strong>Strain Cost: 4.</strong> Free at Realm 5+.</li>
 </ul>
 <p><strong>Flame Wall</strong> (sustained fire zone at range)</p>
 <ul>
@@ -488,7 +512,7 @@
 <li>Intents: Guard + Harm (3)</li>
 <li>Awareness: Focused-Narrow (+2)</li>
 <li>Duration: Sustained (+2)</li>
-<li><strong>Strain Cost: 7.</strong> Free at Realm 7+.</li>
+<li><strong>Strain Cost: 7.</strong> Free at Realm 8+.</li>
 </ul>
 <p><strong>Burning Shackles</strong> (damage + restrain, single target)</p>
 <ul>
@@ -497,7 +521,7 @@
 <li>Intents: Harm + Seize (2)</li>
 <li>Awareness: Focused-Single (+1)</li>
 <li>Duration: Sustained (+2)</li>
-<li><strong>Strain Cost: 5.</strong> Free at Realm 5+.</li>
+<li><strong>Strain Cost: 5.</strong> Free at Realm 6+.</li>
 </ul>
 <p><strong>Spectral Lockpick</strong> (conjure a small tool from Ren)</p>
 <ul>
@@ -506,7 +530,7 @@
 <li>Intents: Manifest (1)</li>
 <li>Awareness: Suppressed-Touch (+0)</li>
 <li>Duration: Persistent (+3)</li>
-<li><strong>Strain Cost: 4.</strong> Free at Realm 4+.</li>
+<li><strong>Strain Cost: 4.</strong> Free at Realm 5+.</li>
 </ul>
 <p><strong>Enchanted Sword</strong> (permanently imbue a real blade with fire)</p>
 <ul>
@@ -515,7 +539,7 @@
 <li>Intents: Create + Harm (1)</li>
 <li>Awareness: Suppressed-Touch (+0)</li>
 <li>Duration: Permanent (+4)</li>
-<li><strong>Strain Cost: 5.</strong> Free at Realm 5+.</li>
+<li><strong>Strain Cost: 5.</strong> Free at Realm 6+.</li>
 </ul>
 <p><strong>Skeleton Soldier</strong> (raise a lasting undead from a corpse)</p>
 <ul>
@@ -533,7 +557,7 @@
 <li>Intents: Displace + Condition[Prone] (2)</li>
 <li>Awareness: Focused-Wide (+3)</li>
 <li>Duration: Instant (+0)</li>
-<li><strong>Strain Cost: 5.</strong> Free at Realm 5+.</li>
+<li><strong>Strain Cost: 5.</strong> Free at Realm 6+.</li>
 </ul>
 <p><strong>Bone Claymore</strong> (trap, placed at your feet)</p>
 <ul>
@@ -542,7 +566,7 @@
 <li>Intents: Cast[Harm] (1)</li>
 <li>Awareness: Suppressed-Touch (+0)</li>
 <li>Duration: Charged (+1)</li>
-<li><strong>Strain Cost: 2.</strong> Free at Realm 2+.</li>
+<li><strong>Strain Cost: 2.</strong> Free at Realm 3+.</li>
 </ul>
 <p><strong>Spectral Claymore</strong> (trap, placed at range)</p>
 <ul>
@@ -551,5 +575,5 @@
 <li>Intents: Cast[Harm] (1)</li>
 <li>Awareness: Focused-Single (+1)</li>
 <li>Duration: Charged (+1)</li>
-<li><strong>Strain Cost: 3.</strong> Free at Realm 3+.</li>
+<li><strong>Strain Cost: 3.</strong> Free at Realm 4+.</li>
 </ul> </div> <footer class="sl-flex astro-3yyafb3n"> <div class="meta sl-flex astro-3yyafb3n">   </div> <div class="pagination-links print:hidden astro-u2l5gyhi" dir="ltr"> <a href="/metanoia-wiki/rules/character/favor/" rel="prev" class="astro-u2l5gyhi"> <svg aria-hidden="true" class="astro-u2l5gyhi astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17 11H9.41l3.3-3.29a1.004 1.004 0 1 0-1.42-1.42l-5 5a1 1 0 0 0-.21.33 1 1 0 0 0 0 .76 1 1 0 0 0 .21.33l5 5a1.002 1.002 0 0 0 1.639-.325 1 1 0 0 0-.219-1.095L9.41 13H17a1 1 0 0 0 0-2Z"/></svg> <span class="astro-u2l5gyhi"> Previous <br class="astro-u2l5gyhi"> <span class="link-title astro-u2l5gyhi">Favor</span> </span> </a> <a href="/metanoia-wiki/rules/abilities/passive-abilities/" rel="next" class="astro-u2l5gyhi"> <svg aria-hidden="true" class="astro-u2l5gyhi astro-c6vsoqas" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" style="--sl-icon-size: 1.5rem;"><path d="M17.92 11.62a1.001 1.001 0 0 0-.21-.33l-5-5a1.003 1.003 0 1 0-1.42 1.42l3.3 3.29H7a1 1 0 0 0 0 2h7.59l-3.3 3.29a1.002 1.002 0 0 0 .325 1.639 1 1 0 0 0 1.095-.219l5-5a1 1 0 0 0 .21-.33 1 1 0 0 0 0-.76Z"/></svg> <span class="astro-u2l5gyhi"> Next <br class="astro-u2l5gyhi"> <span class="link-title astro-u2l5gyhi">Passive Abilities</span> </span> </a> </div>  </footer> <div class="license-link astro-sz7xmlte"> <a href="/metanoia-wiki/license/" class="astro-sz7xmlte">License</a> </div> </div> </div>  </main> </div> </div> </div> </div> </body></html>
