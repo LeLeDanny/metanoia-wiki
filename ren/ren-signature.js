@@ -61,6 +61,51 @@
     });
   }
   bindRadio('style', 'style'); bindRadio('texture', 'texture'); bindRadio('cent', 'cent'); bindRadio('real', 'real'); bindRadio('expa', 'expa');
+  // ---- the reader's own characters (saved in this browser, handed over by the page as the ren-characters event) ----
+  var charWrap = document.getElementById('charwrap'), charSel = document.getElementById('char'), chars = [];
+  function match(list, name) {
+    var w = String(name || '').trim().toLowerCase(), k;
+    for (k = 0; k < list.length; k++) if (String(list[k]).toLowerCase() === w) return list[k];
+    return null;
+  }
+  var known = D.polarities.map(function (p) { return p.name; });
+  function useCharacter(id) {
+    var c = chars.filter(function (x) { return x.id === id; })[0];
+    if (!c) return;
+    var pick = [];
+    c.polarities.concat([c.motive.polarity, c.identity.polarity, c.identity.polarity2]).forEach(function (n) {
+      var m = match(known, n);
+      if (m && pick.indexOf(m) < 0) pick.push(m);
+    });
+    // A character still being made may have fewer than six polarities. The rest are filled so the schema has six nodes.
+    known.forEach(function (n) { if (pick.length < 6 && pick.indexOf(n) < 0) pick.push(n); });
+    state.polarities = pick.slice(0, 6);
+    state.motive.polarity = match(pick, c.motive.polarity) || pick[0];
+    state.motive.object = match(L.OBJECT_ORDER, c.motive.object) || state.motive.object;
+    state.motive.rank = Math.max(0, Math.min(8, c.motive.rank));
+    state.identity.polarity = match(pick, c.identity.polarity) || pick[1];
+    state.identity.polarity2 = match(pick, c.identity.polarity2) || pick.filter(function (n) { return n !== state.identity.polarity; })[0];
+    var tex = match(['Tranquil', 'Volatile', 'Rampant'], c.texture);
+    if (tex) {
+      state.texture = tex;
+      Array.prototype.forEach.call(document.querySelectorAll('input[name=texture]'), function (r) { r.checked = r.value === tex; });
+    }
+    mobj.value = state.motive.object; mrank.value = state.motive.rank;
+    buildPols(); draw(true);
+  }
+  function listCharacters(list) {
+    chars = list || [];
+    var keep = charSel.value;
+    charSel.innerHTML = '<option value="">Choose one</option>';
+    chars.forEach(function (c) { var o = document.createElement('option'); o.value = c.id; o.textContent = c.name; charSel.appendChild(o); });
+    charSel.value = chars.some(function (c) { return c.id === keep; }) ? keep : '';
+    charWrap.hidden = !chars.length;
+    // Keep the drawing in step when the chosen character changes in another tab or on the sheet.
+    if (charSel.value) useCharacter(charSel.value);
+  }
+  charSel.addEventListener('change', function () { if (charSel.value) useCharacter(charSel.value); });
+  window.addEventListener('ren-characters', function (e) { listCharacters(e.detail); });
+
   // The toolbar wraps, so the layout measures it. Starlight's header sits above it.
   var header = document.querySelector('header.header');
   function navHeight() { return header ? header.offsetHeight : 0; }
