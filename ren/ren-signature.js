@@ -32,7 +32,7 @@
     polsum.textContent = state.polarities.length + ' chosen';
     fillRoles();
   }
-  var mpol = document.getElementById('mpol'), ipol = document.getElementById('ipol'), ipol2 = document.getElementById('ipol2'), mobj = document.getElementById('mobj'), mrank = document.getElementById('mrank');
+  var mpol = document.getElementById('mpol'), ipol = document.getElementById('ipol'), ipol2 = document.getElementById('ipol2'), mobj = document.getElementById('mobj');
   function fillRoles() {
     [mpol, ipol, ipol2].forEach(function (sel) {
       sel.innerHTML = '';
@@ -44,12 +44,11 @@
     mpol.value = state.motive.polarity; ipol.value = state.identity.polarity; ipol2.value = state.identity.polarity2;
   }
   L.OBJECT_ORDER.forEach(function (o) { var op = document.createElement('option'); op.value = o; op.textContent = o; mobj.appendChild(op); });
-  mobj.value = state.motive.object; mrank.value = state.motive.rank;
+  mobj.value = state.motive.object;
   mpol.addEventListener('change', function () { state.motive.polarity = mpol.value; draw(true); });
   ipol.addEventListener('change', function () { state.identity.polarity = ipol.value; fillRoles(); draw(true); });
   ipol2.addEventListener('change', function () { state.identity.polarity2 = ipol2.value; draw(true); });
   mobj.addEventListener('change', function () { state.motive.object = mobj.value; draw(true); });
-  mrank.addEventListener('input', function () { state.motive.rank = Math.max(0, Math.min(8, +mrank.value || 0)); draw(true); });
   document.getElementById('rand').addEventListener('click', function () {
     var pick = [];
     while (pick.length < 6) { var c = D.polarities[Math.floor(Math.random() * D.polarities.length)].name; if (pick.indexOf(c) < 0) pick.push(c); }
@@ -82,7 +81,6 @@
     state.polarities = pick.slice(0, 6);
     state.motive.polarity = match(pick, c.motive.polarity) || pick[0];
     state.motive.object = match(L.OBJECT_ORDER, c.motive.object) || state.motive.object;
-    state.motive.rank = Math.max(0, Math.min(8, c.motive.rank));
     state.identity.polarity = match(pick, c.identity.polarity) || pick[1];
     state.identity.polarity2 = match(pick, c.identity.polarity2) || pick.filter(function (n) { return n !== state.identity.polarity; })[0];
     var tex = match(['Tranquil', 'Volatile', 'Rampant'], c.texture);
@@ -90,7 +88,7 @@
       state.texture = tex;
       Array.prototype.forEach.call(document.querySelectorAll('input[name=texture]'), function (r) { r.checked = r.value === tex; });
     }
-    mobj.value = state.motive.object; mrank.value = state.motive.rank;
+    mobj.value = state.motive.object;
     buildPols(); draw(true);
   }
   function listCharacters(list) {
@@ -106,12 +104,20 @@
   charSel.addEventListener('change', function () { if (charSel.value) useCharacter(charSel.value); });
   window.addEventListener('ren-characters', function (e) { listCharacters(e.detail); });
 
-  // The toolbar wraps, so the layout measures it. Starlight's header sits above it.
-  var header = document.querySelector('header.header');
-  function navHeight() { return header ? header.offsetHeight : 0; }
-  function measureBar() { document.documentElement.style.setProperty('--barh', bar.offsetHeight + 'px'); }
+  // The toolbar wraps, so the layout measures it.
+  var stageEl = document.querySelector('.stage'), stepsEl = document.getElementById('steps');
+  function measureBar() {
+    var root = document.documentElement.style;
+    root.setProperty('--barh', bar.offsetHeight + 'px');
+    // The page does not scroll, so the stage and the text column take whatever the window has left under the toolbar.
+    root.setProperty('--stageh', Math.max(240, window.innerHeight - bar.getBoundingClientRect().bottom) + 'px');
+    root.setProperty('--stepsh', Math.max(160, window.innerHeight - stepsEl.getBoundingClientRect().top) + 'px');
+  }
+  // Nothing scrolls the page to redraw it, so the toolbar reports its own height changes (wrapping, late fonts).
+  if (window.ResizeObserver) new ResizeObserver(measureBar).observe(bar);
 
   // ---- Realm track ----
+  // The text column is the only thing that scrolls. Its position sets the Realm, and the wheel or a drag over the diagram scrolls it.
   var track = document.getElementById('track'), meter = document.getElementById('meter');
   REALMS.forEach(function (nm, i) {
     var b = document.createElement('button');
@@ -119,28 +125,44 @@
     b.addEventListener('click', function () { scrollToRealm(i); });
     track.appendChild(b);
   });
-  var stageEl = document.querySelector('.stage');
-  // Viewport line where a step counts as centered: the middle of the area the stage does not cover.
-  function readLine() {
-    var mobile = window.matchMedia('(max-width: 860px)').matches;
-    var top = mobile ? stageEl.getBoundingClientRect().bottom : navHeight() + bar.offsetHeight;
-    return top + (window.innerHeight - top) / 2;
-  }
+  // The line in the text column where a step counts as centered: its middle.
+  function readLine() { return stepsEl.clientHeight / 2; }
   function centers() {
-    return steps.map(function (s) { var r = s.getBoundingClientRect(); return r.top + window.scrollY + r.height / 2; });
+    return steps.map(function (s) { return s.offsetTop + s.offsetHeight / 2; });
   }
   function scrollToRealm(r) {
-    var c = centers(), k = Math.min(5, Math.floor(r)), f = r - k;
+    var c = centers(), k = Math.max(0, Math.min(5, Math.floor(r))), f = Math.max(0, Math.min(1, r - k));
     var y = c[k] + (k < 5 ? (c[k + 1] - c[k]) * f : 0);
-    window.scrollTo({ top: y - readLine(), behavior: reduce ? 'auto' : 'smooth' });
+    stepsEl.scrollTo({ top: y - readLine(), behavior: reduce ? 'auto' : 'smooth' });
   }
   function realmFromScroll() {
-    var c = centers(), vc = window.scrollY + readLine();
+    var c = centers(), vc = stepsEl.scrollTop + readLine();
     if (vc <= c[0]) return 0;
     if (vc >= c[5]) return 5;
     for (var k = 0; k < 5; k++) if (vc < c[k + 1]) return k + (vc - c[k]) / (c[k + 1] - c[k]);
     return 5;
   }
+  stepsEl.addEventListener('scroll', function () { dirty = true; requestAnimationFrame(function () { draw(); }); }, { passive: true });
+  // Over the diagram, the wheel and a drag scroll the text column.
+  stageEl.addEventListener('wheel', function (e) {
+    e.preventDefault();
+    stepsEl.scrollTop += e.deltaY * (e.deltaMode === 1 ? 40 : 1);
+  }, { passive: false });
+  var lastY = null;
+  stageEl.addEventListener('touchstart', function (e) { lastY = e.touches[0].clientY; }, { passive: true });
+  stageEl.addEventListener('touchmove', function (e) {
+    if (lastY === null) return;
+    var y = e.touches[0].clientY;
+    stepsEl.scrollTop += lastY - y;
+    lastY = y;
+  }, { passive: true });
+  stageEl.addEventListener('touchend', function () { lastY = null; });
+  document.addEventListener('keydown', function (e) {
+    if (e.target.closest && e.target.closest('input, select, textarea, button, summary')) return;
+    var k = e.key, r = realmFromScroll();
+    if (k === 'ArrowDown' || k === 'PageDown') { e.preventDefault(); scrollToRealm(Math.floor(r + 1e-6) + 1); }
+    else if (k === 'ArrowUp' || k === 'PageUp') { e.preventDefault(); scrollToRealm(Math.ceil(r - 1e-6) - 1); }
+  });
 
   // ---- captions that follow the toolbar ----
   var dyn = {
@@ -185,14 +207,13 @@
     Array.prototype.forEach.call(track.querySelectorAll('button'), function (b, i) { b.setAttribute('aria-current', i === near ? 'true' : 'false'); });
     meter.style.width = (r / 5 * 100) + '%';
     document.getElementById('dyn-layout').textContent = state.motive.object + ': ' + L.SCHEMAS[state.motive.object].note;
-    document.getElementById('dyn-rank').textContent = 'Rank ' + state.motive.rank + ': ' + state.motive.rank + (state.motive.rank === 1 ? ' ring' : ' rings') + ' around ' + state.motive.polarity + '.';
+    document.getElementById('dyn-rank').textContent = 'One ring around ' + state.motive.polarity + '.';
     document.getElementById('dyn-style').textContent = dyn.style[state.style];
     document.getElementById('dyn-tex').textContent = dyn.tex[state.texture];
     document.getElementById('dyn-cent').textContent = dyn.cent[state.cent];
     document.getElementById('dyn-real').textContent = dyn.real[state.real];
     document.getElementById('dyn-expa').textContent = dyn.expa[state.expa];
   }
-  window.addEventListener('scroll', function () { dirty = true; requestAnimationFrame(function () { draw(); }); }, { passive: true });
   window.addEventListener('resize', function () { draw(true); });
   draw(true);
   window.__setRealm = function (r) { scrollToRealm(r); };

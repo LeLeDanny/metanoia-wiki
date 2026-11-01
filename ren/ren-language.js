@@ -458,7 +458,7 @@
     var o = { schema: st.motive.object, figures: figs, style: st.style, texture: st.texture || 'Tranquil', rank: st.motive.rank, centralization: st.centralization };
     var full = unit(o), view, body;
     if (realm < 3) {
-      var u0 = unit(Object.assign({}, o, { reveal: { links: ramp(realm, 0, 1), rings: ramp(realm, 0.5, 1.5), marks: ramp(realm, 1, 2), bound: ramp(realm, 2, 3), cent: ramp(realm, 2.4, 3) } }));
+      var u0 = unit(Object.assign({}, o, { reveal: { links: ramp(realm, 0, 1), rings: ramp(realm, 0.5, 1.5), marks: ramp(realm, 1, 2), bound: 1, cent: ramp(realm, 2.4, 3) } }));
       body = u0.g; view = { x: full.cx, y: full.cy, half: full.half };
     } else if (realm <= 4) {
       var t1 = ramp(realm, 3, 4), l1 = wrapLevel(full, st.realization || 'Focused', o, t1);
@@ -467,7 +467,7 @@
       var l1b = wrapLevel(full, st.realization || 'Focused', o, 1), t2 = ramp(realm, 4, 5), l2 = wrapLevel(l1b, st.expansion || 'Replicating', o, t2);
       body = l2.g; view = lerpView(l2.focus, { x: l2.cx, y: l2.cy, half: l2.half }, t2);
     }
-    var hh = view.half * (1 + 0.06 * ramp(realm, 4, 5));
+    var hh = view.half * (1.1 + 0.06 * ramp(realm, 4, 5));
     var label = 'Schematic of a Ren signature: ' + names.join(', ') + '. Motive ' + st.motive.polarity + ' of ' + st.motive.object + ', Realm ' + (Math.round(realm * 10) / 10) + '.';
     return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="' + [f(view.x - hh), f(view.y - hh), f(hh * 2), f(hh * 2)].join(' ') + '" role="img" aria-label="' + label + '">' +
       '<title>' + label + '</title><style>*{vector-effect:non-scaling-stroke}</style>' + body + '</svg>';
